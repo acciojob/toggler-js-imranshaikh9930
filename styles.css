@@ -1,1 +1,21 @@
 /*  your css code here. If applicable */
+ .toggle-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .toggle {
+      cursor: pointer;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    .good { background-color: #aaffaa; }
+    .cheap { background-color: #ffaaaa; }
+    .fast { background-color: #aaaaff; }
+
+    .max-two:checked + .toggle {
+      pointer-events: none;
+    }
